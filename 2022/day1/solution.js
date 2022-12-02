@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+const fs = require('fs');
 
 fs.readFile('./input.txt', (_, data) => {
   const [first, second, third] = String(data)
