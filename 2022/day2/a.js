@@ -15,7 +15,7 @@ const playRound = (opponentShape, playerShape) => {
 
   if (playerShapePoints === opponentShapePoints) {
     // draw
-    return [opponentShape + 3, playerShapePoints + 3];
+    return [opponentShapePoints + 3, playerShapePoints + 3];
   }
 
   const winningShape = (playerShapePoints % 3) + 1;
@@ -25,7 +25,7 @@ const playRound = (opponentShape, playerShape) => {
     return [opponentShapePoints + 6, playerShapePoints];
   }
 
-  // player Won
+  // player won
   return [opponentShapePoints, playerShapePoints + 6];
 };
 
