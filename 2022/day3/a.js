@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.readFile('./input copy.txt', (_, data) => {
+fs.readFile('./input.txt', (_, data) => {
   const lines = String(data)
     .split(/\r?\n/)
     .map((line) => line.split(''));
